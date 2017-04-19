@@ -30,18 +30,17 @@
 ;;; Code:
 
 (defconst lightjames-packages
-  '(youdao-dictionary
-    company
+  '(company
     )
   )
 
-(defun lightjames/init-youdao-dictionary()
-  (use-package youdao-dictionary
-    :defer t
-    :init
-    (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
-    )
-  )
+;; (defun lightjames/init-youdao-dictionary()
+;;   (use-package youdao-dictionary
+;;     :defer t
+;;     :init
+;;     (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+;;     )
+;;   )
 
 (defun lightjames/post-init-company()
   (setq company-minimum-prefix-length 1)
