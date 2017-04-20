@@ -50,7 +50,8 @@ values."
      c-c++
      osx
      html
-     lightjames
+     ;; lightjames
+     lightjames-org
      (chinese :packages youdao-dictionary fcitx
               :variables chinese-enable-fcitx nil
               chinese-enable-youdao-dict t)
@@ -324,6 +325,7 @@ you should place your code here."
   (setq powerline-default-separator 'arrow)
   ;; (global-linum-mode t)
   (global-hungry-delete-mode t)
+  (setq-default dotspacemacs-line-numbers 'relative)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
